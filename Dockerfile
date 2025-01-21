@@ -1,6 +1,6 @@
-FROM centos:8
+FROM centos:9
 
-ARG OC_VERSION=4.2.12
+ARG OC_VERSION=4.17.2
 
 RUN yum update -y && \
     yum -y install yum-utils && \
