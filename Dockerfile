@@ -1,10 +1,10 @@
-FROM centos:9
+FROM quay.io/centos/centos:stream9
 
-ARG OC_VERSION=4.17.2
+ARG OC_VERSION=4.17.12
 
 RUN yum update -y && \
     yum -y install yum-utils && \
-    yum -y install python3 && \
+    yum -y install python3 python3-pip && \
     pip3 install requests && \
     yum clean all
 
