@@ -8,7 +8,7 @@ RUN yum update -y && \
     pip3 install requests && \
     yum clean all
 
-RUN curl -L -o /tmp/oc.tar.gz https://mirror.openshift.com/pub/openshift-v4/clients/ocp/latest/openshift-client-linux-${OC_VERSION}.tar.gz && \
+RUN curl -L -o /tmp/oc.tar.gz https://mirror.openshift.com/pub/openshift-v4/clients/ocp/latest/openshift-client-linux-amd64-rhel9-${OC_VERSION}.tar.gz && \
     tar xvfz /tmp/oc.tar.gz && \
     mv oc /usr/local/bin && \
     mv kubectl /usr/local/bin
